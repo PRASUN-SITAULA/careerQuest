@@ -6,7 +6,7 @@ export default function Navbar(){
         {name:"Search Job", link:"/jobs"}
     ]
     return(
-        <nav className="w-full h-10 flex justify-center align-center">
+        <nav className="w-full h-12 flex justify-center align-center">
             <div className="flex flex-row justify-center items-center ">
                 <ul className="flex justify-between gap-10 items-center list-none"> 
                     {navbarItems.map((nav, index) => (
@@ -17,6 +17,5 @@ export default function Navbar(){
                 </ul>
             </div>
         </nav>
-        
     )
 }

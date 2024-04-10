@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home'
+import Landing from '../components/Landing';
 
 
 const AppRoutes = () => {
@@ -8,7 +9,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         {/* <Route path="/detect" element={<Detect/>} />
         <Route path="/get-result" element={<Result/>}/> */}
-        {/* <Route path="/realtime-result" element={}/> */}
+        <Route path="/jobs" element={<Landing />}/>
       </Routes>
   );
 };
