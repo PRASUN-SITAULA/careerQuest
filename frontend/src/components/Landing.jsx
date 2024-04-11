@@ -3,18 +3,22 @@ import jobImage from '../assets/job.png'
 
 export default function Landing(){
     return(
-        <div className='my-8 mx-4 flex justify-center items-center'>
+        <div className='m-4 flex justify-center items-center'>
             <div className='w-full flex flex-col'>
-                <div className='w-full flex flex-row bg-custom-blue justify-between items-center '>
+                <div className='w-full flex flex-row bg-custom-blue justify-between items-center rounded-t-xl'>
                     <div>
-                        <p>Hello</p>
+                        <h1 className='text-white text-bold text-lg'>Discover Your Next Career Opportunity with</h1>
+                        <div className='w-3/4'>
+                        Say goodbye to endless scrolling through job boards and let our platform do the heavy lifting for you. 
+                        With advanced web scraping technology, we gather the latest job postings from various websites and present them in one convenient location. Whether you're seeking a new challenge or exploring career options, our intuitive search functionality makes it easy to find the perfect opportunity. 
+                        Start your job search journey today and take the next step towards your dream career!
+                        </div>
                     </div>
-                    
-                    <div className='h-auto w-full  flex justify-end mr-8 ' >
+                    <div className='h-auto w-full flex justify-end mr-8'>
                         <img
                         src={jobImage}
                         alt="Banner"
-                        className="opacity-80"
+                        className="opacity-70"
                         />
                     </div>
                 </div>
