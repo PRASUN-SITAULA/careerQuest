@@ -6,11 +6,11 @@ export default function Navbar(){
         {name:"Search Job", link:"/jobs"}
     ]
     return(
-        <nav className="w-full h-12 flex justify-center align-center">
+        <nav className="w-full h-14 flex justify-center align-center">
             <div className="flex flex-row justify-center items-center ">
-                <ul className="flex justify-between gap-10 items-center list-none"> 
+                <ul className="flex justify-between gap-10 items-center list-none "> 
                     {navbarItems.map((nav, index) => (
-                        <li key={index} className='font-roboto font-bold cursor-pointer hover:text-purple-800'>
+                        <li key={index} className='py-4 font-roboto font-bold cursor-pointer hover:text-blue-800'>
 						    <Link>{nav.name}</Link>
 						</li>
                     ))}
