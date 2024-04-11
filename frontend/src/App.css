@@ -1,0 +1,7 @@
+.gradient-blur{
+    border-radius: 50% 22% 40% 80%;  
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%,rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
+    opacity: 0.2;
+      
+}
