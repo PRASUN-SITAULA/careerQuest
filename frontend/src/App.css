@@ -5,3 +5,23 @@
     opacity: 0.2;
       
 }
+
+.custom-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-svg svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 153px;
+}
+
+.custom-svg .shape-fill {
+    fill: #020024;
+}
