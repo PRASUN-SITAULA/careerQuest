@@ -4,11 +4,11 @@ import jobImage from '../assets/job.png'
 export default function Landing(){
     return(
         <div className='m-4 flex justify-center items-center'>
-            <div className='w-full flex flex-col'>
+            <div className='w-full flex flex-col '>
                 <div className='w-full flex md:flex-row flex-col-reverse bg-custom-blue justify-between items-center rounded-t-xl '>
                     <div className='mt-8 ml-8'>
-                        <h1 className='text-white text-bold text-3xl'>Discover Your Next Career Opportunity with</h1>
-                        <h1 className='bg-gradient-to-r from-blue-600 via-green-500 to-indigo-100 inline-block text-transparent bg-clip-text text-7xl text-bold my-4'>careerQuest</h1>
+                        <h1 className='text-white font-medium text-3xl'>Discover Your Next Career Opportunity with</h1>
+                        <h1 className='bg-gradient-to-r from-blue-600 via-green-500 to-indigo-100 inline-block text-transparent bg-clip-text text-7xl my-4'>careerQuest</h1>
                         <div className='md:w-3/4 w-5/6 my-4 text-white text-sm'> 
                         With advanced web scraping technology, the latest job postings from various websites is gathered and presented in one convenient location. Whether you're seeking a new challenge or exploring career options, the intuitive search functionality makes it easy to find the perfect opportunity. 
                         Start your job search journey today and take the next step towards your dream career!
@@ -23,6 +23,9 @@ export default function Landing(){
                         />
                     </div>
                 </div>
+                    <div className='bg-custom-blue'>
+                        <button className='py-2 px-2 rounded bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 ml-8 text-white font-medium pointer'>Get Started</button>
+                    </div>
                     <div className='w-full h-10 relative'>
                         <div class="custom-svg">
                             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -30,7 +33,6 @@ export default function Landing(){
                             </svg>
                         </div>
                     </div>
-
             </div>
         </div>
     )
