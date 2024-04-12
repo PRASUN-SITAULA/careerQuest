@@ -7,10 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'custom-blue': '#020024', 
-        'silver': '#C0C0C0',
-        'dark-blue': '#000080',   
+        'custom-blue': '#020024',    
       },
+      
     },
   },
   plugins: [],

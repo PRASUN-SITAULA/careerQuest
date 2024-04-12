@@ -5,20 +5,21 @@ export default function Landing(){
     return(
         <div className='m-4 flex justify-center items-center'>
             <div className='w-full flex flex-col'>
-                <div className='w-full flex flex-row bg-custom-blue justify-between items-center rounded-t-xl'>
+                <div className='w-full flex md:flex-row flex-col-reverse bg-custom-blue justify-between items-center rounded-t-xl '>
                     <div className='mt-8 ml-8'>
                         <h1 className='text-white text-bold text-3xl'>Discover Your Next Career Opportunity with</h1>
                         <h1 className='bg-gradient-to-r from-blue-600 via-green-500 to-indigo-100 inline-block text-transparent bg-clip-text text-7xl text-bold my-4'>careerQuest</h1>
-                        <div className='w-3/4 my-4 text-white text-sm'> 
+                        <div className='md:w-3/4 w-5/6 my-4 text-white text-sm'> 
                         With advanced web scraping technology, the latest job postings from various websites is gathered and presented in one convenient location. Whether you're seeking a new challenge or exploring career options, the intuitive search functionality makes it easy to find the perfect opportunity. 
                         Start your job search journey today and take the next step towards your dream career!
                         </div>
                     </div>
-                    <div className='h-auto w-full flex justify-end mr-8'>
+                    <div class="circle rounded-full absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden"></div>
+                    <div className='h-auto w-full flex md:justify-end md:mr-8 ml-8'>
                         <img
                         src={jobImage}
                         alt="Banner"
-                        className="opacity-90"
+                        className="opacity-90 "
                         />
                     </div>
                 </div>

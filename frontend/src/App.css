@@ -25,3 +25,9 @@
     fill: #020024;
 }
 
+.circle{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom, #3DFB60 50%, indigo 40%);
+    filter: blur(65px);
+}
