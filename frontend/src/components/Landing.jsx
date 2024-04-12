@@ -1,11 +1,10 @@
 import jobImage from '../assets/job.png'
 
-
 export default function Landing(){
     return(
         <div className='m-4 flex justify-center items-center'>
             <div className='w-full flex flex-col '>
-                <div className='w-full flex md:flex-row flex-col-reverse bg-custom-blue justify-between items-center rounded-t-xl '>
+                <div className='w-full flex md:flex-row flex-col-reverse relative bg-custom-blue justify-between items-center rounded-t-xl '>
                     <div className='mt-8 ml-8'>
                         <h1 className='text-white font-medium text-3xl'>Discover Your Next Career Opportunity with</h1>
                         <h1 className='bg-gradient-to-r from-blue-600 via-green-500 to-indigo-100 inline-block text-transparent bg-clip-text text-7xl my-4'>careerQuest</h1>
@@ -14,7 +13,7 @@ export default function Landing(){
                         Start your job search journey today and take the next step towards your dream career!
                         </div>
                     </div>
-                    <div class="circle rounded-full absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden"></div>
+                    <div class="circle rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden"></div>
                     <div className='h-auto w-full flex md:justify-end md:mr-8 ml-8'>
                         <img
                         src={jobImage}
