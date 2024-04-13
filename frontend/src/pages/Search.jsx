@@ -9,10 +9,17 @@ export default function Search(){
     const handleInputChange = (event) => {
         setInputData(event.target.value)
     }
-    const handleSubmit =  () => {
-        // const data = await axios.get("http://127.0.0.1:3000/jobs")
-        // setJobsData(data)
+    const handleSubmit =  async (e) => {
+        e.preventDefault()
+        // get the scraped data
+        // try{
+        //     const data = await axios.get("http://127.0.0.1:3000/api/v1/jobs")
+        //     setJobsData(data)
+        // }catch(error){
+        //     console.log(error)
+        // }
         console.log(inputData)
+       
     }
 
     return(
@@ -26,10 +33,9 @@ export default function Search(){
                         </svg>
                     </div>
                     <input value={inputData} type="search" onChange={handleInputChange} id="default-search" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required />
-                    <button type="submit" onClick={handleSubmit} className="text-white absolute end-2.5 bottom-2.5 bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    <button onClick={handleSubmit} className="text-white absolute end-2.5 bottom-2.5 bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
                 </div>
             </form>
-
         </div>
     )
 }
