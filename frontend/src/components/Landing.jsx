@@ -23,7 +23,7 @@ export default function Landing(){
                     </div>
                 </div>
                     <div className='bg-custom-blue'>
-                        <button className='py-2 px-2 rounded bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 ml-8 text-white font-medium pointer'>Get Started</button>
+                        <button className='py-2 px-2 rounded bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 ml-8 text-white font-medium cursor-pointer'>Get Started</button>
                     </div>
                     <div className='w-full h-10 relative'>
                         <div class="custom-svg">

@@ -15,7 +15,7 @@ export default function Navbar(){
                 <ul className="flex justify-between gap-10 items-center list-none mr-8"> 
                     {navbarItems.map((nav, index) => (
                         <li key={index} className='py-4 font-roboto font-bold cursor-pointer hover:text-blue-900'>
-						    <Link>{nav.name}</Link>
+						    <Link to={nav.link}>{nav.name}</Link>
 						</li>
                     ))}
                 </ul>
