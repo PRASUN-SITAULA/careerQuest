@@ -9,4 +9,5 @@ app.use(cors())
 const scrapeRouter = require('./routes/scrapeRoutes')
 
 app.use('/api/v1',scrapeRouter)
+
 module.exports = app
