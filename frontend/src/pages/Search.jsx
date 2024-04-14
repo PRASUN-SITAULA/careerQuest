@@ -12,12 +12,12 @@ export default function Search(){
     const handleSubmit =  async (e) => {
         e.preventDefault()
         // get the scraped data
-        // try{
-        //     const data = await axios.get("http://127.0.0.1:3000/api/v1/jobs")
-        //     setJobsData(data)
-        // }catch(error){
-        //     console.log(error)
-        // }
+        try{
+            const data = await axios.get("http://127.0.0.1:3000/api/v1/jobs")
+            setJobsData(data)
+        }catch(error){
+            console.log(error)
+        }
         console.log(inputData)
        
     }
