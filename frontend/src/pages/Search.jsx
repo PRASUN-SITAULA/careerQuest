@@ -9,7 +9,7 @@ export default function Search(){
     const [filteredJobData, setfilteredJobData] = useState()
     const [isLoading, setisLoading] = useState(false)
 
-    const fliterData = (inputData) => {
+    const filterData = (inputData) => {
         inputData = inputData.replace(" ", "+")
         setfilteredJobData(jobsData[inputData])
     }
@@ -23,14 +23,17 @@ export default function Search(){
         // get the scraped data
         try{
             setisLoading(true)
-            const data = await axios.get("http://127.0.0.1:3000/api/v1/jobs")
-            setJobsData(data)
-            setisLoading(false)
-            filteredJobData(jobsData)
+            const response = await axios.get("http://127.0.0.1:8000/api/v1/jobs")
+            console.log(response.data.data)
+            // setJobsData(response[data])
+            console.log("hello")
+            // console.log(jobsData)
+            // setisLoading(false)
+            // filterData(jobsData)
+            // console.log(filteredJobData)
         }catch(error){
             console.log(error)
         }
-        console.log(inputData)
     }
     return(
         <div>
@@ -50,6 +53,5 @@ export default function Search(){
                 <JobCard title="hello" company_name="nepa" location="jhapa" joblink="http" description="surunga"/>
             </div>
         </div>
-        
     )
 }
