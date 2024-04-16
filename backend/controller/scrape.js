@@ -45,7 +45,7 @@ exports.getJobs =  async (req, res) => {
     const allJobs = {};
     for (const title of jobTitles) {
       const jobs = await scrapeJobs(title)
-      allJobs[title] = jobs
+      allJobs[`${title.replace("+", " ")}`] = jobs
     }
     res.status(200).json({
       status: "success",
