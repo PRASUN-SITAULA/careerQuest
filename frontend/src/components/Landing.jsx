@@ -1,4 +1,5 @@
 import jobImage from '../assets/job.png'
+import { Link } from 'react-router-dom'
 
 export default function Landing(){
     return(
@@ -24,7 +25,8 @@ export default function Landing(){
                 </div>
                 
                     <div className='bg-custom-blue'>
-                        <button className='py-2 px-2 rounded font-semibold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 ml-8 text-white font-medium cursor-pointer'>Get Started</button>
+                        <button className='py-2 px-2 rounded font-semibold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 ml-8 text-white font-medium cursor-pointer'>
+                            <Link to="/jobs">Get Started</Link></button>
                     </div>
                     <div className='w-full h-10 relative'>
                         <div class="custom-svg">
