@@ -7,16 +7,15 @@ dotenv.config()
 
 const TOKEN = process.env.TOKEN
 const BROWSERLESS_PORT = process.env.BROWSERLESS_PORT
-const browserWSEndpoint = `ws://localhost:${BROWSERLESS_PORT}?token=${TOKEN}`
+const browserWSEndpoint = `ws://127.0.0.1:${BROWSERLESS_PORT}?token=${TOKEN}`
 
 const jobTitles = ['Software+Engineer', 'UI+Designer', 'Hardware+Engineer']
 
 const scrapeJobs = async (query) => {
-  const browser = await puppeteer.launch();
 
-  //       // const browser = await puppeteer.connect({
-  //       //     browserWSEndpoint: browserWSEndpoint
-  //       // })
+  const browser = await puppeteer.connect({
+      browserWSEndpoint: browserWSEndpoint
+  })
   const url = `https://www.indeed.com/jobs?q=${query}`
   const page = await browser.newPage()
   await page.goto(url)
